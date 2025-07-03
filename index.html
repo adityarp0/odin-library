@@ -40,13 +40,16 @@
                     </div>
                 </div>
 
-                <div class="card"></div>
+                
 
                 
 
-<!-- Form Modal -->
+
 <div class="form-details">
   <form id="signup-form" action="https://httpbin.org/post" method="post">
+    <div class="cancel">
+      <img src="pics/close.png" alt="cancel" height="24" width="24">
+    </div>
     <fieldset>
       <legend>📚 Book Details</legend>
 
@@ -54,7 +57,7 @@
 
       <input type="text" id="authorname" name="authorname" placeholder="Author Name" required>
 
-      <input type="number" id="pages" name="pages" placeholder="Total Pages" required>
+      <input type="number" id="pages" name="pages" placeholder="Total Pages" required min="2">
 
       <div class="radio-group">
         <label><input type="radio" name="read-status" value="read" required> Read</label>
